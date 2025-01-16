@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AC8B9FFC2D32457200EEF30B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AC8B9FFB2D32457200EEF30B /* Lottie */; };
+		ACE820BE2D34F6BB004CA64E /* EffectsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = ACE820BD2D34F6BB004CA64E /* EffectsLibrary */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AC8B9FD32D323C8900EEF30B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8B9FFC2D32457200EEF30B /* Lottie in Frameworks */,
+				ACE820BE2D34F6BB004CA64E /* EffectsLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = SmartHome;
 			packageProductDependencies = (
+				AC8B9FFB2D32457200EEF30B /* Lottie */,
+				ACE820BD2D34F6BB004CA64E /* EffectsLibrary */,
 			);
 			productName = SmartHome;
 			productReference = AC8B9FC22D323C8700EEF30B /* SmartHome.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = AC8B9FB92D323C8700EEF30B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AC8B9FFA2D32457200EEF30B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				ACE820BC2D34F6BB004CA64E /* XCRemoteSwiftPackageReference "effects-library" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AC8B9FC32D323C8700EEF30B /* Products */;
 			projectDirPath = "";
@@ -552,6 +565,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC8B9FFA2D32457200EEF30B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+		ACE820BC2D34F6BB004CA64E /* XCRemoteSwiftPackageReference "effects-library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/effects-library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC8B9FFB2D32457200EEF30B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC8B9FFA2D32457200EEF30B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		ACE820BD2D34F6BB004CA64E /* EffectsLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACE820BC2D34F6BB004CA64E /* XCRemoteSwiftPackageReference "effects-library" */;
+			productName = EffectsLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC8B9FBA2D323C8700EEF30B /* Project object */;
 }
