@@ -58,8 +58,8 @@ protocol BaseConfig {
 public enum Content {
     public enum Shape {
         case circle
-        case triangle
-        case square
+//        case triangle
+//        case square
         case custom(CGPath)
     }
 
@@ -178,17 +178,17 @@ extension Content.Shape {
         switch self {
         case .circle:
             return CGPath(ellipseIn: rect, transform: nil)
-        case .triangle:
-            let path = CGMutablePath()
-            path.addLines(between: [
-                CGPoint(x: rect.midX, y: 0),
-                CGPoint(x: rect.maxX, y: rect.maxY),
-                CGPoint(x: rect.minX, y: rect.maxY),
-                CGPoint(x: rect.midX, y: 0)
-            ])
-            return path
-        case .square:
-            return CGPath(rect: rect, transform: nil)
+//        case .triangle:
+//            let path = CGMutablePath()
+//            path.addLines(between: [
+//                CGPoint(x: rect.midX, y: 0),
+//                CGPoint(x: rect.maxX, y: rect.maxY),
+//                CGPoint(x: rect.minX, y: rect.maxY),
+//                CGPoint(x: rect.midX, y: 0)
+//            ])
+//            return path
+//        case .square:
+//            return CGPath(rect: rect, transform: nil)
         case .custom(let path):
             return path
         }
